@@ -1,4 +1,4 @@
-package tobyspring.helloboot;
+package tobyspring.helloboot.v1;
 
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.server.WebServer;
@@ -19,12 +19,12 @@ import java.io.IOException;
  * - 여러 서블릿 등록되면서 중복 코드 및 공통화된 작업 해줄 컨트롤러 필요하게 됨
  * ex. 인증 보안, 다국어 공통 기능
  */
-public class FrontControllerbootApplication {
+public class FrontControllerBootApplication {
 
 	public static void main(String[] args) {
 		ServletWebServerFactory serverFactory = new TomcatServletWebServerFactory(); //톰캣 서버를 만드는 복잡한 설정을 간단하게 제공
 		WebServer webServer = serverFactory.getWebServer(servletContext -> {
-			HelloController helloController = new HelloController(); //helloController를 사용하는 frontController 만들기 (helloController에 작업 위임)
+			HelloController helloController = new HelloController();//helloController를 사용하는 frontController 만들기 (helloController에 작업 위임)
 
 			servletContext.addServlet("frontcontroller", new HttpServlet() {
 				@Override
@@ -38,9 +38,7 @@ public class FrontControllerbootApplication {
 						resp.setStatus(HttpStatus.OK.value());
 						resp.setHeader(HttpHeaders.CONTENT_TYPE, MediaType.TEXT_PLAIN_VALUE);
 						resp.getWriter().println(ret);
-					} else if (req.getRequestURI().equals("/user")) {
-						//
-					}else {
+					} else {
 						resp.setStatus(HttpStatus.NOT_FOUND.value());
 					}
 				}
