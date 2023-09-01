@@ -7,9 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
-import tobyspring.helloboot.HelloController;
 import tobyspring.helloboot.HelloService;
-import tobyspring.helloboot.SimpleHelloService;
 
 /**
  * 자바 코드 구성정보 사용
