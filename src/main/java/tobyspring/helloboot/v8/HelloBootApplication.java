@@ -25,6 +25,6 @@ public class HelloBootApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringBootApplication.run(HelloBootApplication.class, args);
+		SpringBootRun.run(HelloBootApplication.class, args);
 	}
 }
