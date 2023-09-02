@@ -5,11 +5,12 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.context.properties.bind.Binder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
-import tobyspring.config.MyAutoConfiguration;
-import tobyspring.config.MyConfigurationProperties;
+import tobyspring.helloboot.v17.config.MyAutoConfiguration;
+import tobyspring.helloboot.v17.config.MyConfigurationProperties;
 
 import java.util.Map;
 
+import static org.springframework.core.annotation.AnnotationUtils.findAnnotation;
 import static org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes;
 
 @MyAutoConfiguration

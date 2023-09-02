@@ -1,6 +1,6 @@
 package tobyspring.helloboot.v17.config.autoconfig;
 
-import tobyspring.config.MyConfigurationProperties;
+import tobyspring.helloboot.v17.config.MyConfigurationProperties;
 
 @MyConfigurationProperties(prefix = "data")
 public class MyDataSourceProperties {
