@@ -1,6 +1,6 @@
 package tobyspring.helloboot.v16.config.autoconfig;
 
-import tobyspring.config.MyConfigurationProperties;
+import tobyspring.helloboot.v16.config.MyConfigurationProperties;
 
 @MyConfigurationProperties(prefix = "server")
 public class ServerProperties {
