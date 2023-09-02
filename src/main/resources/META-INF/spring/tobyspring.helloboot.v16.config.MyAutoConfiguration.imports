@@ -1,0 +1,5 @@
+tobyspring.helloboot.v16.config.autoconfig.PropertyPostProcessorConfig
+tobyspring.helloboot.v16.config.autoconfig.PropertyPlaceholderConfig
+tobyspring.helloboot.v16.config.autoconfig.TomcatWebServerConfig
+tobyspring.helloboot.v16.config.autoconfig.JettyWebServerConfig
+tobyspring.helloboot.v16.config.autoconfig.DispatcherServletConfig
